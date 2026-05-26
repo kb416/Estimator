@@ -436,7 +436,7 @@ function navButtons(canNext=true, isSubmit=false) {
     <button class="btn ghost" onclick="goBack()">← Back</button>
     ${isSubmit
       ? `<button class="btn primary lg" onclick="handleSubmit()" ${S.submitting?'disabled':''}>
-           ${S.submitting ? 'Sending…' : 'Send My Estimate →'}
+           ${S.submitting ? 'Sending…' : "Let's See My Estimate →"}
          </button>`
       : `<button class="btn primary" onclick="goNext()" ${!canNext?'disabled':''}>Next →</button>`
     }
