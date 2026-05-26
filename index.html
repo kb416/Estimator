@@ -693,13 +693,14 @@ function renderConfirmation() {
   return `<div class="confirmation">
     <div class="confirm-icon">✓</div>
     <h2>Estimate submitted!</h2>
-    <p class="confirm-lead">Thank you, <strong>${esc(S.contact.name||'')}</strong>. We've received your request and will be in touch shortly.</p>
+    <p class="confirm-lead">Thank you, <strong>${esc(S.contact.name||'')}</strong>. We will be in touch shortly.</p>
     ${est&&est.totalMax>0?`
     <div class="confirm-summary">
       <h3>${typeLabel}</h3>
       <div class="confirm-range">${fmt(est.totalMin)} – ${fmt(est.totalMax)} CAD</div>
       <p class="confirm-finish">${finLabel} finish level</p>
     </div>`:''}
+    <p class="ep-disclaimer">Preliminary estimate based on typical Toronto market rates. Actual costs depend on site conditions, design choices, and contractor quotes. A site assessment and contractor investigations are required for an accurate quote.</p>
     <div class="confirm-next">
       <h4>What happens next?</h4>
       <ol>
