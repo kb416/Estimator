@@ -38,9 +38,9 @@
     /* ── Header ─────────────────────────────────────────────── */
     .site-header { background:var(--primary-dark); color:#fff; padding:0 1.5rem; }
     .header-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:2.5rem; padding:1.25rem 0; }
-    .logo { display:flex; flex-direction:column; border-right:1px solid rgba(255,255,255,.2); padding-right:2.5rem; flex-shrink:0; }
-    .logo-main { font-size:1.35rem; font-weight:700; letter-spacing:.5px; color:var(--accent); }
-    .logo-sub  { font-size:.7rem; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.5); margin-top:1px; }
+    .logo { display:flex; align-items:center; border-right:1px solid rgba(255,255,255,.2); padding-right:2.5rem; flex-shrink:0; }
+    .logo a { display:flex; align-items:center; text-decoration:none; }
+    .logo-img { height:80px; width:auto; background:#fff; border-radius:8px; padding:6px 10px; display:block; }
     .header-title h1 { font-size:1.15rem; font-weight:600; color:#fff; margin-bottom:2px; }
     .header-title p  { font-size:.8rem; color:rgba(255,255,255,.5); font-weight:400; }
 
@@ -200,8 +200,9 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="logo">
-        <span class="logo-main">Riverdale</span>
-        <span class="logo-sub">Construction Management</span>
+        <a href="https://www.riverdalecm.ca" target="_blank" rel="noreferrer">
+          <img src="Logo%20long.jpg" alt="Riverdale Construction Management" class="logo-img">
+        </a>
       </div>
       <div class="header-title">
         <h1>Project Estimator</h1>
